@@ -1,0 +1,48 @@
+.home-container {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.home-container .section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+}
+.section__info {
+  font-size: 3rem;
+}
+.section__interests{
+  color: white;
+  font-size: 2rem;
+  padding: 100px;
+}
+.section__interests__dark{
+  font-size: 3vw;
+  color: white;
+  padding: 100px;
+}
+.section__button {
+  background: transparent;
+  border: 1px solid black;
+  padding: 15px;
+}
+.home-container .section:nth-child(1) {
+  background: url("/assets/images/home-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home-container .section:nth-child(2) {
+  background: url("/assets/images/football.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home-container .section:nth-child(3) {
+  background: url("/assets/images/nature.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
