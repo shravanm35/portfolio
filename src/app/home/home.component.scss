@@ -45,4 +45,12 @@
   background-size: cover;
   background-attachment: fixed;
 }
+.home-container .section:nth-child(4) {
+  background: url("/assets/images/contact.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-icon{
+  cursor: pointer;
+}
 

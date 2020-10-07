@@ -1,0 +1,89 @@
+<div class="header-container">
+<h1>
+  Welcome To Portfolio Builder
+</h1>
+<h3>
+  Enter the details to get Started
+</h3>
+</div>
+<div class="form-container">
+  <div class="row">
+    <div class="col-md-12 form-container__heading">Personal Details</div>
+  </div>
+  <form [formGroup]="portFolioForm" id="ngForm" (ngSubmit)="onFormSubmit()">
+  <div class="row">
+    <div class="col-md-6">
+      <mat-form-field class="example-form-field">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name" />
+      </mat-form-field>
+    </div>
+    <div class="col-md-6">
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          formControlName="email"
+          placeholder="Ex. pat@example.com"
+          required
+        />
+        <mat-error
+          *ngIf="
+          portFolioForm.controls['email'].hasError('email') &&
+            !portFolioForm.controls['email'].hasError('required')
+          "
+        >
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="portFolioForm.controls['email'].hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-md-6">
+      <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+91 &nbsp;</span>
+        <input type="tel" formControlName="contact" matInput placeholder="Enter Contact" />
+        <mat-error
+          *ngIf="
+          portFolioForm.controls['contact'].hasError('pattern')
+          "
+        >
+          Please enter a valid Contact Number
+        </mat-error>
+        <!-- <mat-icon matSuffix>mode_edit</mat-icon> -->
+      </mat-form-field>
+    </div>
+    <div class="col-md-6">
+      <mat-form-field class="example-form-field">
+        <mat-label>LinkedIn Profile URL</mat-label>
+        <input matInput type="text" formControlName="linkedIn" />
+      </mat-form-field>
+    </div>
+    <div class="col-md-12">
+        <mat-label>Candidate Type : {{ (portFolioForm.controls['candidateType'].value)?'Fresher':'Experienced'  }}</mat-label>
+        <br>
+        <mat-slide-toggle (change)="candidateTypeSelect($event.checked)" formControlName="candidateType"></mat-slide-toggle>
+    </div>
+  </div>
+</form>
+</div>
+<div class="form-container mt-5" *ngIf="!portFolioForm.controls['candidateType'].value">
+    <div class="form-container__heading">Experience</div>
+    <mat-form-field class="example-full-width">
+      <textarea matInput  rows="10"  [(ngModel)]="markdown">1600 Amphitheatre Pkwy</textarea>
+    </mat-form-field>
+    Preview
+<markdown class="variable-binding" [data]="markdown"></markdown>
+</div>
+<div class="form-container mt-5">
+  <div class="form-container__heading">
+  Cover Letter
+  </div>
+  <mat-form-field class="example-full-width">
+    <textarea matInput  rows="10"  [(ngModel)]="markdown">1600 Amphitheatre Pkwy</textarea>
+  </mat-form-field>
+  Preview
+<markdown class="variable-binding" [data]="markdown"></markdown>
+</div>
