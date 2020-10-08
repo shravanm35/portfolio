@@ -12,13 +12,18 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MarkdownModule } from 'ngx-markdown';
+import {MatButtonModule} from '@angular/material/button';
+import { CoverLetterComponent } from './cover-letter/cover-letter.component';
+import { EditButtonComponent } from './edit-button/edit-button.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
     ExperienceComponent,
-    EditorComponent
+    EditorComponent,
+    CoverLetterComponent,
+    EditButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,7 @@ import { MarkdownModule } from 'ngx-markdown';
     MatSlideToggleModule,
     FormsModule,
     ReactiveFormsModule,
+    MatButtonModule,
     MarkdownModule.forRoot()
   ],
   providers: [],

@@ -1,0 +1,36 @@
+.cover-letter-container{
+  height: 100vh;
+  .cover-letter-container__header{
+    font-size: 3rem;
+    padding-top: 2%;
+    background: #244a59;
+    color: white;
+  }
+  .cover-letter-container__coverletter{
+    font-size: 1rem;
+  padding: 5%;
+  }
+  .edit-icon-container{
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    z-index: 1;
+  }
+  .section__button {
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
+.cover-letter-container::before{
+  content: "";
+  background-image: url("/assets/images/letter.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}

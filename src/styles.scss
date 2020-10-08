@@ -34,13 +34,10 @@ $portfolio-theme: mat-light-theme((
 @include angular-material-theme($portfolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-html, body {
-  font-family: 'Raleway' !important;
-}
+
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; line-height: 1.5 !important; }

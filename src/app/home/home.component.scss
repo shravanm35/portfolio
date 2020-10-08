@@ -5,7 +5,14 @@
   width: 100%;
   height: 100vh;
   overflow: auto;
+  .edit-icon-container{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+  }
 }
+
 .home-container .section {
   position: relative;
   width: 100%;
@@ -25,27 +32,28 @@
   color: white;
   padding: 100px;
 }
+.section__coverletter{
+  font-size: 1rem;
+  padding: 10%;
+}
+.section__coverletter__header{
+  font-size: 3rem;
+  padding-top: 2%;
+  background: #244a59;
+  color: white;
+}
+
 .section__button {
   background: transparent;
   border: 1px solid black;
   padding: 15px;
 }
-.home-container .section:nth-child(1) {
+.home-container .section:nth-child(2) {
   background: url("/assets/images/home-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
-.home-container .section:nth-child(2) {
-  background: url("/assets/images/football.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
 .home-container .section:nth-child(3) {
-  background: url("/assets/images/nature.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-.home-container .section:nth-child(4) {
   background: url("/assets/images/contact.jpg");
   background-size: cover;
   background-attachment: fixed;

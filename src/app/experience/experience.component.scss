@@ -1,3 +1,13 @@
+.experience-container{
+  background: url("/assets/images/business.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  .edit-icon-container{
+    position: absolute;
+    top: 2%;
+    right: 40%;
+    z-index: 1;
+  }
 .header {
   font-size: 3rem;
 }
@@ -17,4 +27,5 @@
   background: transparent;
   border: 1px solid black;
   padding: 10px;
+}
 }

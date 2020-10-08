@@ -3,18 +3,19 @@ import { Router } from '@angular/router';
 import { UserModel } from '../models/user.model';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  selector: 'app-cover-letter',
+  templateUrl: './cover-letter.component.html',
+  styleUrls: ['./cover-letter.component.scss']
 })
-export class ExperienceComponent implements OnInit {
+export class CoverLetterComponent implements OnInit {
   userInfo:UserModel ;
-  constructor(private router : Router) { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     this.userInfo = JSON.parse(sessionStorage.getItem('userProfile'));
   }
-  public navigate():void{
+  navigate(){
     this.router.navigateByUrl('home');
   }
+
 }

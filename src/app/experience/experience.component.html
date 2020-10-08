@@ -1,95 +1,22 @@
-<div class="container-fluid">
+<div class="container-fluid experience-container">
+  <div class="edit-icon-container">
+    <app-edit-button></app-edit-button>
+    </div>
 <div class="row">
-  <div class="col-md-12 text-center header">
-    I have experience Working with
-  </div>
-</div>
-<div class="row pt-5">
-  <div  class="col-md-2 p-2 text-center">
-    <div class="skill-container">
-    <img src="/assets/images/angular.svg">
-    </div>
-  </div>
-  <div  class="col-md-2">
-    <div class="skill-container p-2 text-center">
-      <img src="/assets/images/typescript.svg">
-    </div>
-  </div>
-  <div  class="col-md-2">
-    <div class="skill-container p-2 text-center">
-      <img src="/assets/images/html.svg">
-    </div>
-  </div>
-  <div  class="col-md-2">
-    <div class="skill-container p-2 text-center">
-      <img src="/assets/images/css.svg">
-    </div>
-  </div>
-  <div  class="col-md-2">
-    <div class="skill-container p-2 text-center">
-      <img src="/assets/images/javascript.svg">
-    </div>
-  </div>
-  <div  class="col-md-2">
-    <div class="skill-container p-2 text-center">
-      <img src="/assets/images/bootstrap.svg">
-    </div>
+  <div class="col-md-7  header">
+    I have experience Working with the below projects
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12 pt-3 text-center header">
-    I have Worked on the below projects
+  <div class="col-md-12 p-5">
+    <markdown
+    class="variable-binding"
+    [data]="userInfo.experience"
+  ></markdown>
   </div>
 </div>
-<div class="row">
-<div class="col-md-3">
-  <div class="card-container">
-  <div>Shell Petroleum USA</div>
-  <ul>
-      <li>Design develop and maintain application as per user stories defined</li>
-      <li>Create multiple reusable modules</li>
-      <li>Participate in code reviews and take actions on them</li>
-      <li>Write Unit test cases of code</li>
-      <li>Improve performance by adhering to strict standards and SONAR cube regulation</li>
-  </ul>
-  </div>
-</div>
-<div class="col-md-3">
-  <div class="card-container">
-    <div>Government Dashboard project Abu Dhabi</div>
-  <ul>
-      <li>Develop user interface of application in an agile environment based on client provided wireframes</li>
-      <li>Participated in design reviews and provide input to design recommendation</li>
-      <li>Provide quality and best practices so that app is best-in-class quality</li>
-      <li>Created a PWA for the same portal </li>
-  </ul>
-  </div>
-
-</div>
-<div class="col-md-3">
-  <div class="card-container">
-    <div>AI Dashboard</div>
-  <ul>
-      <li>Developed Application to analyze data and dynamically create dashboard using Angular 5 and flask as the backend to run AI models for the desired results</li>
-      <li>Developed working prototypes from UI designs for cross-platform devices</li>
-      <li>Created multiple charts based on user requirement using libraries like d3.js , chart.js</li>
-  </ul>
-  </div>
-
-</div>
-<div class="col-md-3">
-  <div class="card-container">
-    <div>Analytics Apps Catalog Automation Portal</div>
-    <ul>
-        <li>Created attractive design using visual elements like carousals, data tables ,headers, navbars,menus,etc</li>
-        <li>Integration with email services to send notifications on certain conditions</li>
-        <li>Achieve Cross-client/browser compatibility</li>
-    </ul>
-  </div>
-</div>
-</div>
-<div class="row">
-  <div class="col-md-12 text-center pt-2">
+<div class="row m-0 p-0">
+  <div class="col-md-12 pl-5">
     <button (click)="navigate()" class="section__button">
       Go to Home
     </button>

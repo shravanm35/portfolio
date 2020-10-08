@@ -1,0 +1,21 @@
+<div class="cover-letter-container">
+  <div class="edit-icon-container">
+  <app-edit-button></app-edit-button>
+  </div>
+  <div class="row m-0 p-0">
+    <div class="col-md-12 text-center cover-letter-container__header">
+      {{ userInfo.name }}
+    </div>
+    <div class="col-md-12 pt-4 cover-letter-container__coverletter">
+      <markdown
+        class="variable-binding"
+        [data]="userInfo.coverLetter"
+      ></markdown>
+    </div>
+  </div>
+  <div class="row m-0 p-0">
+    <div class="col-md-12 pl-5">
+      <button (click)="navigate()" class="section__button">Go to Home</button>
+    </div>
+  </div>
+</div>
