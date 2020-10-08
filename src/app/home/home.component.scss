@@ -5,14 +5,13 @@
   width: 100%;
   height: 100vh;
   overflow: auto;
-  .edit-icon-container{
+  .edit-icon-container {
     position: absolute;
     top: 0px;
     right: 0px;
     z-index: 1;
   }
 }
-
 .home-container .section {
   position: relative;
   width: 100%;
@@ -22,21 +21,21 @@
 .section__info {
   font-size: 3rem;
 }
-.section__interests{
+.section__interests {
   color: white;
   font-size: 2rem;
   padding: 100px;
 }
-.section__interests__dark{
+.section__interests__dark {
   font-size: 3vw;
   color: white;
   padding: 100px;
 }
-.section__coverletter{
+.section__coverletter {
   font-size: 1rem;
   padding: 10%;
 }
-.section__coverletter__header{
+.section__coverletter__header {
   font-size: 3rem;
   padding-top: 2%;
   background: #244a59;
@@ -58,7 +57,6 @@
   background-size: cover;
   background-attachment: fixed;
 }
-.contact-icon{
+.contact-icon {
   cursor: pointer;
 }
-

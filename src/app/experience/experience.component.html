@@ -1,25 +1,23 @@
 <div class="container-fluid experience-container">
   <div class="edit-icon-container">
     <app-edit-button></app-edit-button>
+  </div>
+  <div class="row">
+    <div class="col-md-7 header">
+      I have experience Working with the below projects
     </div>
-<div class="row">
-  <div class="col-md-7  header">
-    I have experience Working with the below projects
   </div>
-</div>
-<div class="row">
-  <div class="col-md-12 p-5">
-    <markdown
-    class="variable-binding"
-    [data]="userInfo.experience"
-  ></markdown>
+  <div class="row">
+    <div class="col-md-12 p-5">
+      <markdown
+        class="variable-binding"
+        [data]="userInfo.experience"
+      ></markdown>
+    </div>
   </div>
-</div>
-<div class="row m-0 p-0">
-  <div class="col-md-12 pl-5">
-    <button (click)="navigate()" class="section__button">
-      Go to Home
-    </button>
+  <div class="row m-0 p-0">
+    <div class="col-md-12 pl-5">
+      <button (click)="navigate()" class="section__button">Go to Home</button>
+    </div>
   </div>
-</div>
 </div>
